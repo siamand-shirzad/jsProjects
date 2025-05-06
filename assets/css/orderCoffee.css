@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainSection{
+    background-blend-mode: overlay;
+    background: url(/assets/images/coffee-picture.jpg) center/  cover no-repeat , rgba(0, 0, 0, 0.342);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.title{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    color: rgb(219, 166, 96);
+    padding-inline-start: 5rem;
+}
+/* order button */
+.orderBtn{
+    display: flex;
+    position: relative;
+    margin-top: 2rem;
+    background-color: rgb(163, 113, 46);
+    border-radius: 1rem;
+    width: 10rem;
+    height: 2rem;
+}
+.orderBtn button{
+    cursor: pointer;
+    position: absolute;
+    background-color: inherit;
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.orderBtn span{
+    right: 0;
+    color: white ;
+    font-size: 1.5rem;
+    position: absolute;
+}
+/* orderBox section */
+.orderSection{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.341);
+    backdrop-filter: blur(2px);
+}
+.orderBox{
+    margin-top: 5rem;
+    position: absolute;
+    width: 25rem;
+    height: 30rem;
+    background-color: white;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 2rem;
+
+}
+
+
+
+
+.btn{
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: black;
+}
+.btn button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all .5s;
+}
+.btn button:hover{
+    transform: translateY(-20%);
+}
+/* .btn button:focus{
+    transform: translateY(0);
+} */
+.btn button:active{
+    transform: translateY(0);
+}
+
+.p_h_center{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
