@@ -19,10 +19,20 @@
                 </div>
             </div>
             <div class="orderSection" id="orderSection">
-                <div class="orderBox">orderrrrr</div>
+                <div class="orderBox" dir="rtl">
+                    <label for="">نام خود را وارد کنید</label><br>
+                    <input id="nameInput" type="text"><br>
+                    <label for="">نام نوشیدنی خود را وارد کنید:</label><br>
+                    <input id="drinkType" type="text"><br>
+                    <label for="">افزودنی های خودرا واردکنید:</label><br>
+                    <input id="extrasInput" type="text"><br>
+                    <div class="btn"><button onclick="handleOrder()">ثبت سفارش</button></div>
+                    <div id="message">
+                        <p>سفارش شما:</p>
+                    </div>
+                </div>
             </div>    
         </section>
-            <div class="btn"><button>button</button></div>
     </main>
     <script src="/assets/javascript/orderCoffee.js"></script>
 </body>

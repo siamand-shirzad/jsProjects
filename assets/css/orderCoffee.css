@@ -60,16 +60,26 @@
     backdrop-filter: blur(2px);
 }
 .orderBox{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgba(142, 142, 142, 0.648);
+    z-index: -1;
     margin-top: 5rem;
     position: absolute;
     width: 25rem;
     height: 30rem;
-    background-color: white;
     right: 0;
     left: 0;
     margin: auto;
     border-radius: 2rem;
+    line-height: 1rem;
 
+}
+.orderBox input{
+    background-color: rgb(152, 152, 152);
+    height: 2rem;
+    border-radius: .5rem;
 }
 
 
