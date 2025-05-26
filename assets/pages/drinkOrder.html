@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drinkOrder</title>
+    <link rel="stylesheet" href="/assets/css/drinkOrder.css">
+    <link rel="icon" href="/assets/images/logo-3.png">
+  </head>
+  <body dir="rtl">
+    <h2>🍹سفارش ساز نوشیدنی</h2>
+    <div class="card" id="drinkCard">
+      <div>نوع نوشیدنی خود را انتخاب کنید</div>
+      <input type="text" id="nameInput" placeholder="نام شما"><br>
+      <select name="" id="drinkSelect">
+        <option value="" disabled selected>--انتخاب نوشیدنی--</option>
+        <option value="قهوه">☕قهوه</option>
+        <option value="جای">🍵جای</option>
+        <option value="اب پرتقال">🍊اب پرتقال</option>
+      </select><br>
+      <button class="btn" onclick="submitOrder()">ثبت سفارش</button>
+      <button class="btn" onclick="toggle()">تغییر تم</button>
+      <button class="btn" onclick="reset()">خالی کردن لیست</button>
+
+      <div class="error" id="errorMsg"></div>
+    </div>
+    <div class="orderBox" id="orderList">
+      <strong>سفارش های ثبت شده:</strong>
+      <ul id="ordersUl"></ul>
+
+    </div>
+
+
+    <script src="/assets/javascript/drinkOrder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* transition: all .5s; */
+}
+@font-face {
+    font-family: mehr;
+    src: url(/assets/font/B-Mehr/B-Mehr/B\ Mehr\ Bold_0.ttf);
+}
+body{
+    font-family: mehr;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(100, 148, 237, 0.158);
+}
+.card{
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #0000003d;
+    text-align: center;
+}
+.theme{
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.585), rgb(206, 190, 255));
+}
+.card input, .card select{
+    margin:  10px 0;
+    height: 2rem;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.275);
+}
+.orderBox{
+    background-color: rgb(244, 243, 243);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #0000003d;
+    padding: 5px;
+    margin-top: 5px;
+    min-height: 10rem ;
+    max-height: auto;
+    overflow: hidden;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    font-family: inherit;
+    color: white;
+    background-color: rgba(0, 110, 255, 0.727);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.btn:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #0000007b;
+}
+.error{
+    font-size: .7rem;
+    color: red;
+}
