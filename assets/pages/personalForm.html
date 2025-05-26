@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalForm</title>
+    <link rel="stylesheet" href="/assets/css/personalForm.css">
+</head>
+<body>
+    <section dir="rtl">
+        <form id="userForm">
+            <h3>فرم ثبت اطلاعات کاربر</h3>
+            <input type="text" id="name" placeholder="نام"><br>
+            <input type="text" id="family" placeholder="نام خانوادگی"><br>
+            <input type="email" id="email" placeholder="ایمیل"><br>
+            <input type="text" id="job" placeholder="شغل"><br>
+            <input type="number" id="phone" placeholder="شماره تماس"><br>
+            <select name="" id="gender">
+                <option value="" disabled selected>جنسیت خود را انتخاب کنید</option>
+                <option value="male">مرد</option>
+                <option value="female">زن</option>
+            </select><br>
+            <button type="submit" onsubmit="submit()">افزودن</button>
+        </form>
+        
+    </section>
+
+    <script src="/assets/javascript/personalForm.js"></script>
+</body>
+</html>
