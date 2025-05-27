@@ -1,5 +1,8 @@
+const overlay = document.getElementById('orderSection');
+const order = document.getElementById("orderBox");
 function orderBox(params) {
-    const order = document.getElementById('orderSection');
+    overlay.style.opacity = '1';
+    overlay.style.visibility = 'visible';
     order.style.opacity = '1';
     order.style.visibility = 'visible';
 }
@@ -33,3 +36,11 @@ function handleOrder() {
     orderCoffee(costumerName, drink , ...extras);
     
 }
+overlay.addEventListener("click", ()=>{
+    overlay.style.opacity = '0';
+    overlay.style.visibility = 'hidden';    
+    order.style.opacity = '0';
+    order.style.visibility = 'hidden';
+
+   
+})
