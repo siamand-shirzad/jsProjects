@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="/assets/css/personalForm.css">
 </head>
 <body>
-    <section dir="rtl">
+    <div class="container" dir="rtl">
+        <h3>فرم ثبت اطلاعات کاربر</h3>
         <form id="userForm">
-            <h3>فرم ثبت اطلاعات کاربر</h3>
-            <input type="text" id="name" placeholder="نام"><br>
+            <input type="text" id="name" placeholder="نام" value="siamand"><br>
             <input type="text" id="family" placeholder="نام خانوادگی"><br>
             <input type="email" id="email" placeholder="ایمیل"><br>
             <input type="text" id="job" placeholder="شغل"><br>
-            <input type="number" id="phone" placeholder="شماره تماس"><br>
+            <input type="text" id="phone" placeholder="شماره تماس"><br>
             <select name="" id="gender">
                 <option value="" disabled selected>جنسیت خود را انتخاب کنید</option>
-                <option value="male">مرد</option>
-                <option value="female">زن</option>
+                <option value="مرد">مرد</option>
+                <option value="زن">زن</option>
             </select><br>
-            <button type="submit" onsubmit="submit()">افزودن</button>
+            <button type="submit">افزودن</button>
         </form>
+        <div class="button">
+            <button id="showModal">نمایش همه کاربران</button>
+        </div>
         
-    </section>
+    </div>
+    <div id="overlay" ">
+    </div>
+        <div id="modal" dir="rtl"></div>
 
     <script src="/assets/javascript/personalForm.js"></script>
 </body>
