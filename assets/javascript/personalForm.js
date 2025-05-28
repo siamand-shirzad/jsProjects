@@ -81,3 +81,29 @@ document.getElementById("findByEmail").addEventListener("click", ()=>{
     modal.style.opacity = '1'
 
 })
+// آیا همه شاغل اند
+document.getElementById("checkIfAllHaveJob").addEventListener("click", ()=>{
+    //every give us true or false
+    const allHaveJob = people.every(p => p.job.trim() !== "");
+    modal.innerHTML = allHaveJob
+    ? "همه افراد دارای شغل هستند"
+    :"برخی افراد شغل ثبت نکرده اند";
+    overlay.style.visibility = 'visible';
+    overlay.style.opacity = '1';
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+
+})
+//آیا حداقل یک مرد هست؟
+document.getElementById("checkIfAnyIsMale").addEventListener("click",()=>{
+    //حتی یدونه از شرط هم درست باشه مقدار درست برمیگردونه
+    const male = people.some(p =>p.gender === "مرد")
+    modal.innerHTML = male
+    ? "حداقل یک مرد وجود دارد"
+    : "هیچ مردی ثبت نشده است"
+    overlay.style.visibility = 'visible';
+    overlay.style.opacity = '1';
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+
+})
