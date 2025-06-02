@@ -31,3 +31,23 @@
     border: 1px solid purple;
     border-radius: .5rem;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 10rem;
+    height: 1.5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    background-color: rgba(0, 94, 255, 0.468);
+    border: none;
+    border-radius: .5rem;
+}
+input, select{
+    height: 1.5rem;
+    width: 10rem;
+    margin-top: .5rem;
+}
