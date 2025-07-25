@@ -6,7 +6,7 @@
 }
 .mainSection{
     background-blend-mode: overlay;
-    background: url(/assets/images/coffee-picture.jpg) center/  cover no-repeat , rgba(0, 0, 0, 0.342);
+    background: url(../images/coffee-picture.jpg) center/  cover no-repeat , rgba(0, 0, 0, 0.342);
     width: 100vw;
     height: 100vh;
     display: flex;
