@@ -7,15 +7,23 @@
     <title>Document</title>
   </head>
   <body dir="rtl">
+    <h3>لیست کاربران</h3>
+    <div class="inputs">
+      <input type="text" id="input" placeholder="نام">
+      <input type="email" id="email" placeholder="ایمیل">
+      <button onclick="addUser()">افزودن کاربر</button>
+    </div>
     <button onclick="loadUsers()">نمایش اطلاعات</button>
 
     <table id="table">
       <thead>
         <tr>
+          <th>ردیف</th>
           <th>نام</th>
           <th>تلفن</th>
           <th>ایمیل</th>
           <th>آدرس</th>
+          <th>عملیات</th>
         </tr>
       </thead>
 
