@@ -1,0 +1,28 @@
+button{
+    font-weight: bolder;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+table{
+    opacity: 0;
+    width: 90%;
+    margin: 20px auto;
+    transition: all 1s;
+    background: #fff;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th{
+    color: #fff;
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: green;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+}

@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Document</title>
   </head>
-  <body>
-    <div dir="rtl">
-        <input id="inputText" type="text">
-        <button onclick="analyzeText()"> تحلیل داده</button>
-        <div id="output"></div>
-    </div>
-    <script src="/assets/javascript/test.js"></script>
+  <body dir="rtl">
+    <button onclick="loadUsers()">نمایش اطلاعات</button>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>نام</th>
+          <th>تلفن</th>
+          <th>ایمیل</th>
+          <th>آدرس</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+
+    <script src="/assets/javascript/script.js"></script>
   </body>
 </html>
